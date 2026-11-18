@@ -1,8 +1,10 @@
 # baybaris.github.io
 
-Barış Karakaya'nın kişisel portfolyo sitesi: **https://baybaris.github.io**
+Merhaba, ben Barış. Burası kişisel portfolyo sitemin kaynak kodu: **https://baybaris.github.io**
 
-BarCode Gaming görsel kimliğiyle (koyu ızgara zemin, `#D72638` vurgu, Chakra Petch başlıklar) hazırlanmış, tek sayfalık statik bir site. Derleme adımı ya da bağımlılık yok; düz HTML, CSS ve JavaScript.
+Bilgisayar mühendisiyim; oyun geliştirme ve oyunlaştırma üzerine çalışıyorum. Siteyi kendi markam BarCode Gaming'in görsel kimliğiyle hazırladım: koyu ızgara zemin, `#D72638` vurgu ve Chakra Petch başlıklar. Projelerimi, deneyimlerimi ve bana nasıl ulaşabileceğini tek sayfada bulabilirsin.
+
+Derleme adımı ya da bağımlılık yok; düz HTML, CSS ve JavaScript.
 
 ## Yapı
 
@@ -14,11 +16,11 @@ assets/           İndirilebilir CV: cv-baris-karakaya-tr.pdf
 assets/brand/     BarCode Gaming işareti, favicon ve uygulama ikonu
 ```
 
-## İçeriği güncellemek
+## Güncellerken
 
-- **Projeler, deneyimler, iletişim:** Hepsi `index.html` içinde, ilgili `<section>` altında.
-- **Yetenek seviyesi:** İlgili satırdaki `data-level` değerini 1–6 arası değiştir; çubuklar sayfa açılırken bu değere göre çizilir.
-- **CV:** Canva'dan PDF olarak indir ve aynı adla `assets/cv-baris-karakaya-tr.pdf` dosyasının üzerine yaz.
+- Projeler, deneyimler ve iletişim bilgileri `index.html` içinde, ilgili `<section>` altında.
+- Bir yeteneğin seviyesini değiştirmek için o satırdaki `data-level` değerini 1–6 arası güncelliyorum; çubuklar sayfa açılırken buna göre çiziliyor.
+- CV'yi güncellediğimde Canva'dan PDF olarak indirip aynı adla `assets/cv-baris-karakaya-tr.pdf` dosyasının üzerine yazıyorum.
 
 ## Yerelde açmak
 
@@ -26,8 +28,8 @@ assets/brand/     BarCode Gaming işareti, favicon ve uygulama ikonu
 python -m http.server 8765
 ```
 
-Sonra tarayıcıda `http://localhost:8765` adresine git.
+Sonra tarayıcıda `http://localhost:8765`.
 
 ## Yayın
 
-Site GitHub Pages ile `main` dalının kökünden yayınlanıyor. `main` dalına yapılan her push siteyi 1–2 dakika içinde günceller.
+Site GitHub Pages'te `main` dalından yayınlanıyor; her push 1–2 dakika içinde canlıya çıkıyor.
