@@ -1,18 +1,24 @@
 # baybaris.github.io
 
-Barış Karakaya'nın kişisel portfolyo sitesi. BarCode Gaming görsel kimliğiyle (koyu ızgara zemin, `#D72638` vurgu, Chakra Petch başlıklar) hazırlanmış tek sayfalık statik site.
+Barış Karakaya'nın kişisel portfolyo sitesi: **https://baybaris.github.io**
+
+BarCode Gaming görsel kimliğiyle (koyu ızgara zemin, `#D72638` vurgu, Chakra Petch başlıklar) hazırlanmış, tek sayfalık statik bir site. Derleme adımı ya da bağımlılık yok; düz HTML, CSS ve JavaScript.
 
 ## Yapı
 
 ```
 index.html        Tüm içerik: ana menü, projeler, profil, kariyer, iletişim
 css/style.css     Renkler en üstteki :root değişkenlerinde
-js/main.js        Menü seçimi (fare, ↑ ↓, Enter), yetenek çubukları, giriş animasyonu
-assets/           CV PDF'i buraya: cv-baris-karakaya-tr.pdf
-assets/brand/     BarCode Gaming işareti, favicon ve uygulama ikonu (logo kitinden)
+js/main.js        Menü seçimi (fare, ↑ ↓, Esc), yetenek çubukları, yol haritası, giriş animasyonu
+assets/           İndirilebilir CV: cv-baris-karakaya-tr.pdf
+assets/brand/     BarCode Gaming işareti, favicon ve uygulama ikonu
 ```
 
-Yetenek seviyesini değiştirmek için `index.html` içinde ilgili satırdaki `data-level="4"` değerini 1–6 arası değiştir.
+## İçeriği güncellemek
+
+- **Projeler, deneyimler, iletişim:** Hepsi `index.html` içinde, ilgili `<section>` altında.
+- **Yetenek seviyesi:** İlgili satırdaki `data-level` değerini 1–6 arası değiştir; çubuklar sayfa açılırken bu değere göre çizilir.
+- **CV:** Canva'dan PDF olarak indir ve aynı adla `assets/cv-baris-karakaya-tr.pdf` dosyasının üzerine yaz.
 
 ## Yerelde açmak
 
@@ -20,23 +26,8 @@ Yetenek seviyesini değiştirmek için `index.html` içinde ilgili satırdaki `d
 python -m http.server 8765
 ```
 
-Sonra tarayıcıda `http://localhost:8765`.
+Sonra tarayıcıda `http://localhost:8765` adresine git.
 
-## Yayına almak (GitHub Pages, ücretsiz)
+## Yayın
 
-1. GitHub'da adı tam olarak **`BayBaris.github.io`** olan herkese açık bir depo oluştur.
-2. Bu klasörü o depoya gönder:
-   ```
-   git init
-   git add .
-   git commit -m "Portfolyo sitesinin ilk sürümü"
-   git branch -M main
-   git remote add origin https://github.com/BayBaris/BayBaris.github.io.git
-   git push -u origin main
-   ```
-3. Depoda **Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`** seç, kaydet.
-4. 1–2 dakika sonra site `https://baybaris.github.io` adresinde yayında. Sonraki her `git push` siteyi kendiliğinden günceller.
-
-## Yayından önce
-
-- Canva'dan CV'yi PDF olarak indir, `assets/cv-baris-karakaya-tr.pdf` adıyla koy. Dosya yoksa "CV İndir" bağlantısı 404 verir.
+Site GitHub Pages ile `main` dalının kökünden yayınlanıyor. `main` dalına yapılan her push siteyi 1–2 dakika içinde günceller.
