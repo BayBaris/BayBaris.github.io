@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barış Karakaya · Oyun ve Yazılım Geliştirici</title>
+  <meta name="description" content="Barış Karakaya — Unity ve C# ile oyun geliştiren yazılım geliştirici. Projeler, yetenekler ve iletişim.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <meta name="theme-color" content="#0D0F14">
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+  <a class="skip" href="#projeler">İçeriğe geç</a>
+
+  <!-- Sabit üst şerit: isim + slogan -->
+  <header class="topbar">
+    <a href="#baslangic" class="brand"><img class="brand-mark" src="assets/brand/mark-small.svg" alt="" width="26" height="26">Sen mi geldin?</a>
+    <p class="motto">Umutlarınla Büyü, <span class="accent">Hayallerinle Yaşa</span></p>
+  </header>
+
+  <!-- Sol yol haritası: kaydırdıkça dolan çubuk ve kontrol noktaları -->
+  <nav class="roadmap" aria-label="Bölüm haritası">
+    <div class="rm-track" aria-hidden="true"><div class="rm-fill"></div></div>
+    <ol class="rm-points">
+      <li><a href="#baslangic" data-section="baslangic"><span class="rm-home" aria-hidden="true">⌂</span> Menü</a></li>
+      <li><a href="#projeler" data-section="projeler">Projeler</a></li>
+      <li><a href="#profil" data-section="profil">Profil</a></li>
+      <li><a href="#kariyer" data-section="kariyer">Kariyer</a></li>
+      <li><a href="#iletisim" data-section="iletisim">İletişim</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <!-- 1. Açılış: oyun ana menüsü -->
+    <section id="baslangic" class="hero">
+      <span class="corner tl" aria-hidden="true"></span><span class="corner tr" aria-hidden="true"></span>
+      <span class="corner bl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
+
+      <div class="hero-inner">
+        <p class="eyebrow"><span class="tag">BİLGİSAYAR MÜHENDİSİ · OYUN GELİŞTİRİCİ · OYUNLAŞTIRMA</span></p>
+        <h1 class="title">BARIŞ<br><span class="accent">KARAKAYA</span></h1>
+        <p class="lead">Unity ve C# ile oyun geliştiriyorum; oyunları oyuncu gözüyle inceleyip arayüz ve deneyim tarafına kafa yoruyorum.</p>
+
+        <nav class="menu" aria-label="Ana menü">
+          <ul>
+            <li><a href="#projeler" class="menu-item is-active">Projeler</a></li>
+            <li><a href="#profil" class="menu-item">Profil</a></li>
+            <li><a href="#kariyer" class="menu-item">Kariyer</a></li>
+            <li><a href="assets/cv-baris-karakaya-tr.pdf" class="menu-item" download>CV İndir</a></li>
+            <li><a href="#iletisim" class="menu-item">İletişim</a></li>
+          </ul>
+          <p class="menu-hint" aria-hidden="true">↑ ↓ ile seç · Enter ile gir</p>
+        </nav>
+      </div>
+
+      <!-- BarCode Gaming işareti (halka + şeritli kalp), logo kitinden; hareketsiz -->
+      <img class="logo-mark" src="assets/brand/mark.svg" alt="" width="400" height="400">
+
+      <a href="#projeler" class="scroll-cue">Kaydır <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <!-- 2. Projeler -->
+    <section id="projeler" class="section">
+      <header class="section-head">
+        <span class="section-no">01</span>
+        <h2>Projeler</h2>
+      </header>
+
+      <p class="group-label"><strong>Güncel projeler</strong> · 2026</p>
+      <div class="quests">
+        <article class="quest quest-featured">
+          <div class="quest-head">
+            <h3>JSON Imager</h3>
+            <span class="quest-state">Sürüm 1.1.0</span>
+          </div>
+          <p class="quest-meta">Windows masaüstü aracı · Açık kaynak · 2026</p>
+          <ul class="quest-body">
+            <li>JSON belgelerini açıp içindeki tabloları kendiliğinden bulan; onları okunur metne, görsele ve grafiğe çeviren yerel bir araç. Hesap, sunucu ya da telemetri yok.</li>
+            <li>Farklı alanlara sahip kayıtları şema varyantlarına ayırıyor; tablo, şema ağacı ve grafikleri PNG, SVG, PDF, CSV, Markdown ve draw.io olarak dışa aktarıyor.</li>
+            <li>İsteğe bağlı bir ajan, belgenin yalnızca şemasını görerek yapı hakkındaki soruları yanıtlıyor; API anahtarları Windows DPAPI ile şifreli saklanıyor.</li>
+          </ul>
+          <ul class="chips"><li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>WebView2</li><li>LLM entegrasyonu</li></ul>
+          <p class="quest-team"><b>Geliştirici:</b> Barış Karakaya · Türkçe ve İngilizce arayüz</p>
+          <a class="quest-link" href="https://github.com/BayBaris/jimg" target="_blank" rel="noopener">Kaynak kod →</a>
+          <a class="quest-link" href="https://github.com/BayBaris/jimg/releases/latest" target="_blank" rel="noopener">İndir (Windows) →</a>
+        </article>
+      </div>
+
+      <p class="group-label"><strong>Üniversite dönemi projeleri</strong> · 2022 – 2023 · Eğitim amaçlı çalışmalar</p>
+      <div class="quests">
+        <article class="quest">
+          <div class="quest-head">
+            <h3>BioVenture</h3>
+            <span class="quest-state">Tamamlandı</span>
+          </div>
+          <p class="quest-meta">Bulmaca · Eğitsel · Bitirme tezi · 2023</p>
+          <ul class="quest-body">
+            <li>Biyoloji kavramlarını bulmacalarla öğreten eğitsel oyun; hedefi MEB okullarında kullanılması.</li>
+            <li>Mekanikleri ve seviye tasarımlarını Unity3D ve C# ile geliştirdim; arayüz ve modelleri Figma ve Blender ile hazırladım.</li>
+          </ul>
+          <ul class="chips"><li>Unity3D</li><li>C#</li><li>Seviye Tasarımı</li><li>Figma</li><li>Blender</li></ul>
+          <p class="quest-team"><b>Ekip:</b> Atakan Kutay Soydan, Barış Karakaya · <b>Danışman:</b> Prof. Dr. Samsun Mustafa Başarıcı</p>
+          <a class="quest-link" href="https://github.com/BayBaris/BioVenture" target="_blank" rel="noopener">Kaynak kod →</a>
+        </article>
+
+        <article class="quest">
+          <div class="quest-head">
+            <h3>Hava Durumu Tahmin İstasyonu</h3>
+            <span class="quest-state">Tamamlandı</span>
+          </div>
+          <p class="quest-meta">Nesnelerin İnterneti · Donanım · Ders projesi</p>
+          <ul class="quest-body">
+            <li>Sıcaklık, basınç, nem ve rakımı ölçüp bir panoda grafik olarak gösteren IoT istasyonu.</li>
+            <li>Devreyi ESP32, DHT22 ve harici Wi-Fi modülüyle kurdum; veriyi MQTT ile aktaran kodu C ile yazdım.</li>
+          </ul>
+          <ul class="chips"><li>C</li><li>ESP32</li><li>MQTT</li><li>Arduino IDE</li></ul>
+          <p class="quest-team"><b>Ekip:</b> Atakan Kutay Soydan, Barış Karakaya, Seray Karaefe · <b>Danışman:</b> Prof. Dr. Ahmet Çağdaş Seçkin</p>
+        </article>
+
+        <article class="quest">
+          <div class="quest-head">
+            <h3>Carrot Clicker</h3>
+            <span class="quest-state">Tamamlandı</span>
+          </div>
+          <p class="quest-meta">Casual · Idle · Kişisel proje</p>
+          <ul class="quest-body">
+            <li>Havuca tıklayarak puan toplanan, puanlarla otomatik tıklama gibi geliştirmeler alınan idle oyun.</li>
+            <li>Arayüz, animasyon ve oyun mantığını Unity2D ve C# ile kurdum; event tabanlı yapı ve SOLID ilkelerini uyguladım.</li>
+          </ul>
+          <ul class="chips"><li>Unity2D</li><li>C#</li><li>Unity Events</li><li>SOLID</li><li>Animator</li></ul>
+          <p class="quest-team"><b>Geliştirici:</b> Barış Karakaya (bireysel proje)</p>
+          <a class="quest-link" href="https://github.com/BayBaris/Carrot-Clicker" target="_blank" rel="noopener">Kaynak kod →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. Oyuncu profili -->
+    <section id="profil" class="section">
+      <header class="section-head">
+        <span class="section-no">02</span>
+        <h2>Oyuncu profili</h2>
+      </header>
+
+      <div class="profile">
+        <div class="profile-card">
+          <div class="avatar" aria-hidden="true">BK</div>
+          <div>
+            <span class="tag">OYUN TASARIMCISI</span>
+            <p class="profile-name">Barış Karakaya</p>
+            <p class="profile-role">Bilgisayar Mühendisi · Adnan Menderes Üniversitesi, 2023</p>
+          </div>
+          <p class="profile-bio">Bilgisayar, yazılım ve oyunlarla 12-13 yaşlarımda tanıştım. Uzun zamandır oyunları inceliyor, hataları tespit ediyor ve arayüz ile kullanıcı deneyimini oyuncu bakış açısıyla test ediyorum. Toplulukta hem üye hem yönetici olarak yer almayı, öğrendiğim her konuda not ve belge hazırlamayı seviyorum.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Teknik</h3>
+            <div class="skill"><span>C#</span><span class="seg" data-level="4" aria-label="6 üzerinden 4"></span></div>
+            <div class="skill"><span>Unity</span><span class="seg" data-level="4" aria-label="6 üzerinden 4"></span></div>
+            <div class="skill"><span>Python</span><span class="seg" data-level="3" aria-label="6 üzerinden 3"></span></div>
+            <div class="skill"><span>SQL · MSSQL</span><span class="seg" data-level="3" aria-label="6 üzerinden 3"></span></div>
+            <div class="skill"><span>Git</span><span class="seg" data-level="3" aria-label="6 üzerinden 3"></span></div>
+            <div class="skill"><span>CANIAS · TROIA</span><span class="seg" data-level="3" aria-label="6 üzerinden 3"></span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Tasarım</h3>
+            <div class="skill"><span>Oyun Tasarımı</span><span class="seg" data-level="4" aria-label="6 üzerinden 4"></span></div>
+            <div class="skill"><span>UI/UX Tasarımı</span><span class="seg" data-level="3" aria-label="6 üzerinden 3"></span></div>
+            <div class="skill"><span>Web Tasarımı</span><span class="seg" data-level="3" aria-label="6 üzerinden 3"></span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Yönetim ve İletişim</h3>
+            <div class="skill"><span>Proje Yönetimi</span><span class="seg" data-level="4" aria-label="6 üzerinden 4"></span></div>
+            <div class="skill"><span>Ekip Yönetimi</span><span class="seg" data-level="4" aria-label="6 üzerinden 4"></span></div>
+            <div class="skill"><span>Etkili İletişim</span><span class="seg" data-level="4" aria-label="6 üzerinden 4"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Kariyer -->
+    <section id="kariyer" class="section">
+      <header class="section-head">
+        <span class="section-no">03</span>
+        <h2>Kariyer haritası</h2>
+      </header>
+
+      <ol class="timeline">
+        <li><span class="when">Eyl 2025 – Ağu 2026</span><h3>Bilgisayar Mühendisi</h3><p class="where">Türk Deniz Kuvvetleri · Altınova, Yalova</p><p>Aritmetik, mantıksal ve formül gerektiren belge işlerini dokümantasyonuyla birlikte yeniden düzenleyip otomatikleştirdim; ekibin iş planlamasını ve verimliliğini üstlendim.</p></li>
+        <li><span class="when">May 2024 – Kas 2024</span><h3>Yazılım Geliştirici · CANIAS</h3><p class="where">OKT Trailer · Aydın</p><p>TROIA ile CANIAS ERP üzerinde idari taleplerin yönetimi için bir modül geliştirdim; Python ile veri yapıları ve MSSQL ile canlı veritabanı üzerinde çalıştım.</p></li>
+        <li><span class="when">Şub 2024 – Haz 2024</span><h3>Unity Geliştirici</h3><p class="where">JuniusTech · Yarı zamanlı, uzaktan</p><p>Unity ile oyun programlama yaptım; oyun geliştirme sürecinin zorluklarını farklı bakış açılarıyla analiz etmeyi öğrendim.</p></li>
+        <li><span class="when">Haz 2023 – Ağu 2024</span><h3>Podcast Sunucusu</h3><p class="where">mentorium · "Bir Hikaye Bir Sen"</p><p>Farklı alanlarda öne çıkmış konuklarla sohbet havasında röportajlar yapan programda sunuculuk ve yardımcı sunuculuk yaptım.</p></li>
+        <li><span class="when">Tem 2023 – Ağu 2023</span><h3>Stajyer Geliştirici</h3><p class="where">Adnan Menderes Üniversitesi</p><p>EEG cihazıyla görüntü sınıflandırmaya yönelik deneysel bir çalışmada Python ile kod parçaları yazdım.</p></li>
+        <li><span class="when">Kas 2022 – Ağu 2023</span><h3>Trainee · Oyun Geliştirme</h3><p class="where">Oyun ve Uygulama Akademisi</p><p>Unity ve C# ile bireysel ve ekip projeleri geliştirdim; script'ler, oyun mekanikleri ve hata düzeltmelerini üstlendim, Game Jam'lerde hızlı geliştirme ve takım çalışması deneyimi kazandım.</p></li>
+        <li><span class="when">Ağu 2022 – Eki 2022</span><h3>Stajyer Oyun Geliştiricisi</h3><p class="where">Gamelab İstanbul</p><p>C++ ve OpenGL tabanlı GlistEngine'de GUI tasarımına odaklanıp bir kütüphane yazılımı geliştirdim.</p></li>
+      </ol>
+    </section>
+
+    <!-- 5. İletişim -->
+    <section id="iletisim" class="section contact">
+      <header class="section-head">
+        <span class="section-no">04</span>
+        <h2>İletişim</h2>
+      </header>
+      <p class="status"><span class="dot" aria-hidden="true"></span>Çalışmaya açık · Manisa · Hibrit / Uzaktan</p>
+      <p class="contact-lead">Yeni bir görev için hazırım. Bir oyun, bir ekip ya da bir fikir varsa yaz.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:baybarisk@outlook.com">baybarisk@outlook.com</a></li>
+        <li><a href="https://www.linkedin.com/in/baybarisk" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/BayBaris" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="assets/cv-baris-karakaya-tr.pdf" download>CV İndir (PDF)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Barış Karakaya</span>
+    <a href="#baslangic">Ana menüye dön ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
